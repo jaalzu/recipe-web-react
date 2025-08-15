@@ -1,0 +1,27 @@
+.card{
+  background-color: white;
+  padding: .3rem 1rem 1.6rem;
+  margin: 0 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  border-radius: 5px;
+}
+
+h2{
+  font-weight: 600;
+}
+
+p{
+  color: rgb(62, 62, 62);
+}
+
+span{
+}
+
+.pista{
+  display: block;
+  color: rgb(116, 116, 116);
+  margin-top: 1rem;
+  font-size: .9rem;
+
+}

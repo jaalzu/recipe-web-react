@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    background-color: transparent;
+    border: 1px solid rgba(182, 182, 182, 0.751);
+    border-radius: 6px;
+    padding: .8rem;
+    font-size: 1rem;
+}
+
+.result{
+    background-color: #f3f4f6;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1rem;
+}

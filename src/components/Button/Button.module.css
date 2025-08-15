@@ -1,0 +1,24 @@
+.button{
+    padding: 0.5rem 3rem;
+    font-size: 1.1rem;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.default{
+    background-color: grey;
+}
+
+.red{
+    background-color: #dc3545;
+}
+
+.green{
+    background-color: #28a745;
+}
+
+.blue{
+    background-color: rgba(21, 193, 255, 0.765);
+}
