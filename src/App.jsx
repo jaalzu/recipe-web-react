@@ -2,7 +2,8 @@ import styles from './App.module.css';
 import Card from './components/card/Card';
 import Counter from './components/Counter/Counter';
 import TextInput from './components/TextInput/TextInput';
-import ToggleBtn from './components/ToggleBtn';
+import ToggleBtn from './components/ToggleBtn/ToggleBtn';
+import TodoList from './components/TodoList/TodoList';
 export default function App() {
   return (
     <div className={styles.container}>
@@ -31,6 +32,7 @@ export default function App() {
         <Card titulo="✅ Ejercicio 4: Lista de Tareas
         " tarea="  Permite agregar nuevas tareas a la lista
         " pista=" [...tareas, nuevaTarea] para agregar al array"  color='#b43638'>
+          <TodoList />
    </Card>
         <br />
 
