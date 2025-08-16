@@ -4,6 +4,9 @@ import Counter from './components/Counter/Counter';
 import TextInput from './components/TextInput/TextInput';
 import ToggleBtn from './components/ToggleBtn/ToggleBtn';
 import TodoList from './components/TodoList/TodoList';
+import Form from './components/Form/Form';
+import ColorPicker from './components/ColorPicker/ColorPicker';
+
 export default function App() {
   return (
     <div className={styles.container}>
@@ -39,6 +42,14 @@ export default function App() {
         <Card titulo="📋 Ejercicio 5: Formulario Completo" 
               tarea="  Maneja múltiples campos y muestra los datos"
               pista=" Crea un objeto con todos los datos y guárdalo en un estado"  color='#e78d3e'>
+                <Form />
+   </Card>
+        <br />
+
+        <Card titulo="📋 Ejercicio 6: Selector de Color" 
+              tarea=" Cambia el color de fondo del cuadrado"
+              pista=" Usa useState para guardar la clase CSS del color seleccionado"  color='#089d0aff'>
+                <ColorPicker />
    </Card>
     </div>
   )

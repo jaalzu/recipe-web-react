@@ -8,3 +8,10 @@ h1{
     color: rgba(23, 77, 204, 0.993);
     text-align: center;
 }
+
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    padding: .5rem;
+    max-width: 100%;
+}
