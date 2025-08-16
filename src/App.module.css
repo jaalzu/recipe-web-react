@@ -1,7 +1,21 @@
 .layout {
   display: flex;
   min-height: 100vh;
+  background-color: rgb(255, 255, 255);
 }
+
+h1{
+    color: rgba(23, 77, 204, 0.993);
+    text-align: center;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: .8rem;
+    max-width: 100%;
+}
+
 
 .sidebar {
   width: 100px;
@@ -37,14 +51,3 @@
   padding: 2rem;
 }
 
-h1{
-    color: rgba(23, 77, 204, 0.993);
-    text-align: center;
-}
-
-input{
-    border-radius: 5px;
-    border: 1px solid rgb(197, 197, 197);
-    padding: .5rem;
-    max-width: 100%;
-}

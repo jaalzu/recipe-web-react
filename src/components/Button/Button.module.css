@@ -12,13 +12,17 @@
 }
 
 .red{
-    background-color: #dc3545;
+    background-color: #f11d32;
 }
 
 .green{
-    background-color: #28a745;
+    background-color: #1ec745;
 }
 
 .blue{
     background-color: rgba(21, 193, 255, 0.765);
+}
+
+.pink{
+    background-color: rgb(191, 54, 111);
 }

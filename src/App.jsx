@@ -7,11 +7,11 @@ import ToggleBtn from './components/ToggleBtn/ToggleBtn';
 import TodoList from './components/TodoList/TodoList';
 import Form from './components/Form/Form';
 import ColorPicker from './components/ColorPicker/ColorPicker';
+import Calculator from './components/Calculator/Calculator';
 
 export default function App() {
   const [active, setActive] = useState("counter");
 
-  // 🔹 Map de ejercicios
   const ejercicios = {
     counter: (
       <Card titulo="📊 Ejercicio 1: Contador simple"
@@ -60,6 +60,14 @@ export default function App() {
             color='#089d0aff'>
         <ColorPicker />
       </Card>
+    ),
+    calculator: (
+      <Card titulo="📊 Ejercicio 6: Calculadora Simple"
+            tarea=" Haz que funcionen las operaciones básicas"
+            pista="💡 Pista: Convierte a Number() antes de hacer operaciones"
+            color='#18c96eff'>
+        <Calculator />
+      </Card>
     )
   }
 
@@ -75,6 +83,7 @@ export default function App() {
           <li onClick={() => setActive("todo")}>Todo List</li>
           <li onClick={() => setActive("form")}>Formulario</li>
           <li onClick={() => setActive("color")}>Color Picker</li>
+          <li onClick={() => setActive("calculator")}>Calculator</li>
         </ul>
       </aside>
 
