@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import styles from './App.module.css';
 import Card from './components/card/Card';
 import Counter from './components/Counter/Counter';
@@ -80,26 +80,39 @@ export default function App() {
     )
   }
 
+  const items = [
+    { id: 'counter', label: 'Contador' },
+    { id: 'text', label: 'Input Texto' },
+    { id: 'toggle', label: 'Toggle' },
+    { id: 'todo', label: 'Todo List' },
+    { id: 'form', label: 'Formulario' },
+    { id: 'color', label: 'Color Picker' },
+    { id: 'calculator', label: 'Calculator' },
+    { id: 'gallery', label: 'Gallery' },
+  ];
+
   return (
     <div className={styles.layout}>
       {/* Sidebar */}
       <aside className={styles.sidebar}>
-        <h2>Ejercicios</h2>
+        <div className={styles.sidebarHeader}>
+          <h2>🎯 Ejercicios React</h2>
+        </div>
         <ul>
-          <li onClick={() => setActive("counter")}>Contador</li>
-          <li onClick={() => setActive("text")}>Input Texto</li>
-          <li onClick={() => setActive("toggle")}>Toggle</li>
-          <li onClick={() => setActive("todo")}>Todo List</li>
-          <li onClick={() => setActive("form")}>Formulario</li>
-          <li onClick={() => setActive("color")}>Color Picker</li>
-          <li onClick={() => setActive("calculator")}>Calculator</li>
-          <li onClick={() => setActive("gallery")}>Gallery</li>
+          {items.map(item => (
+            <li
+              key={item.id}
+              onClick={() => setActive(item.id)}
+              className={active === item.id ? styles.active : ''}
+            >
+              {item.label}
+            </li>
+          ))}
         </ul>
       </aside>
 
       {/* Contenido */}
       <main className={styles.content}>
-        <h1>Ejercicios de estado en React</h1>
         {ejercicios[active]}
       </main>
     </div>

@@ -1,27 +1,31 @@
 .card{
-  background-color: #fff7fb;
-  padding: .3rem 1rem 1.6rem;
-  margin: 0 1rem;
+  background-color: #fcf9fb;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-  border-radius: 5px;
+  border-radius: 8px;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
 }
 
-h2{
-  font-weight: 600;
+.cardHeader{
+  padding: .3rem .3rem 1.6rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
+
 
 p{
   color: rgb(62, 62, 62);
 }
 
-span{
-}
+
 
 .pista{
   display: block;
-  color: rgb(116, 116, 116);
+  color: rgb(32, 32, 32);
   margin-top: 1rem;
   font-size: .9rem;
-
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 3px solid rgb(43, 198, 43);
+  background-color: #efefef;
 }
