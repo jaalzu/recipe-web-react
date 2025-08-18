@@ -1,0 +1,71 @@
+.quizInfo{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    align-items: center;
+    padding-inline: 1rem;
+background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+ }
+
+.quizQuestionNumber{
+    font-weight: 500;
+    font-size: .9rem;
+    color: #8c3cd1;
+}
+
+.quizScoreText{
+    color: rgb(217, 7, 7);
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.questionsContainer{
+    margin-top: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 2px solid #fef1f9;
+    background-image: linear-gradient(150deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.questionsContainer h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.questionsContainer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.questionsContainer ul li{
+    border: 1px solid rgb(219, 219, 219);
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: 400;
+}
+.questionsContainer ul li span{
+    color: #8c3cd1;
+    font-weight: 600;
+}
+
+li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+
+.seleccionada{
+    background-color: #e0f7fa;
+  border: 2px solid #00acc1;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.correcta{
+    background-color: #1ec745;
+}
+
+.incorrecta{
+    background-color: red;
+}

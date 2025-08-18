@@ -9,6 +9,7 @@ import Form from './components/Form/Form';
 import ColorPicker from './components/ColorPicker/ColorPicker';
 import Calculator from './components/Calculator/Calculator';
 import Gallery from './components/Gallery/Gallery';
+import Quiz from './components/Quiz/Quiz'
 
 export default function App() {
   const [active, setActive] = useState("counter");
@@ -77,6 +78,14 @@ export default function App() {
             color='#e8b409ff'>
         <Gallery />
       </Card>
+    ),
+    quiz: (
+      <Card titulo="📊 Ejercicio 8: Quiz Interactivo"
+            tarea=" Sistema de preguntas con puntuación"
+            pista="💡 Pista: Compara el índice clickeado con pregunta.correcta"
+            color='#8c43c9'>
+        <Quiz />
+      </Card>
     )
   }
 
@@ -89,6 +98,7 @@ export default function App() {
     { id: 'color', label: 'Color Picker' },
     { id: 'calculator', label: 'Calculator' },
     { id: 'gallery', label: 'Gallery' },
+    { id: 'quiz', label: 'Quiz' },
   ];
 
   return (
