@@ -8,6 +8,7 @@ import TodoList from './components/TodoList/TodoList';
 import Form from './components/Form/Form';
 import ColorPicker from './components/ColorPicker/ColorPicker';
 import Calculator from './components/Calculator/Calculator';
+import Gallery from './components/Gallery/Gallery';
 
 export default function App() {
   const [active, setActive] = useState("counter");
@@ -68,6 +69,14 @@ export default function App() {
             color='#18c96eff'>
         <Calculator />
       </Card>
+    ),
+    gallery: (
+      <Card titulo="📊 Ejercicio 7: Galería de Imágenes"
+            tarea=" Navega entre las imágenes con botones"
+            pista="💡 Pista: Usa useState para el índice y verifica límites con disabled"
+            color='#e8b409ff'>
+        <Gallery />
+      </Card>
     )
   }
 
@@ -84,6 +93,7 @@ export default function App() {
           <li onClick={() => setActive("form")}>Formulario</li>
           <li onClick={() => setActive("color")}>Color Picker</li>
           <li onClick={() => setActive("calculator")}>Calculator</li>
+          <li onClick={() => setActive("gallery")}>Gallery</li>
         </ul>
       </aside>
 
