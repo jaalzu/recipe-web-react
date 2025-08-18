@@ -1,0 +1,48 @@
+h3{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.productsGrid{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #f9d8b7;
+    background-color: #fef5ee;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+.cartContainer h4{
+    color: rgb(204, 116, 0);
+    font-weight: 700;
+}
+
+.cartItemsShow{
+    text-align: center;
+    font-weight: 300;
+}
+
+hr{
+   border: 1px solid #f9d8b7;
+    width: 100%;
+}
+
+.cartTotal{
+    background-color: white;
+    align-items: center;
+    display: flex;
+    padding-inline: .7rem;
+    justify-content: space-between;
+}
+
+.cartTotal p{
+    color: green;
+    font-weight: 600;
+}

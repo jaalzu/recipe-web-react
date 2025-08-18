@@ -10,6 +10,7 @@ import ColorPicker from './components/ColorPicker/ColorPicker';
 import Calculator from './components/Calculator/Calculator';
 import Gallery from './components/Gallery/Gallery';
 import Quiz from './components/Quiz/Quiz'
+import ShoppingCart from './components/ShoppingCart/ShoppingCart'
 
 export default function App() {
   const [active, setActive] = useState("counter");
@@ -86,6 +87,14 @@ export default function App() {
             color='#8c43c9'>
         <Quiz />
       </Card>
+    ),
+     shoppingCart: (
+      <Card titulo="📊 Ejercicio 9: Carrito de Compras"
+            tarea=" Agregar/quitar productos y calcular total"
+            pista="💡 Pista: Usa array de objetos para el carrito y reduce() para calcular total"
+            color='#31e311ff'>
+        <ShoppingCart />
+      </Card>
     )
   }
 
@@ -99,6 +108,7 @@ export default function App() {
     { id: 'calculator', label: 'Calculator' },
     { id: 'gallery', label: 'Gallery' },
     { id: 'quiz', label: 'Quiz' },
+    { id: 'shoppingCart', label: 'ShoppingCart' },
   ];
 
   return (
