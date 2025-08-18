@@ -11,6 +11,7 @@ import Calculator from './components/Calculator/Calculator';
 import Gallery from './components/Gallery/Gallery';
 import Quiz from './components/Quiz/Quiz'
 import ShoppingCart from './components/ShoppingCart/ShoppingCart'
+import PasswordGenerator from './components/PasswordGenerator/PasswordGenerator'
 
 export default function App() {
   const [active, setActive] = useState("counter");
@@ -95,6 +96,14 @@ export default function App() {
             color='#31e311ff'>
         <ShoppingCart />
       </Card>
+    ),
+     passwordGenerator: (
+      <Card titulo="📊 Ejercicio 10: Generador de contraseñas"
+            tarea=" Genera contraseñas con opciones personalizables"
+            pista="💡 Pista:  Usa Math.random(), charAt() y concatena strings según las opciones seleccionadas"
+            color='#ef454d'>
+        <PasswordGenerator />
+      </Card>
     )
   }
 
@@ -109,6 +118,7 @@ export default function App() {
     { id: 'gallery', label: 'Gallery' },
     { id: 'quiz', label: 'Quiz' },
     { id: 'shoppingCart', label: 'ShoppingCart' },
+    { id: 'passwordGenerator', label: 'PasswordGenerator' }
   ];
 
   return (
