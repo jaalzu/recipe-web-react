@@ -1,17 +1,17 @@
 import Button from "../Button/Button"
 import { useState } from 'react'
-import styles from './Gallery.module.css'
+
+
 export default function Gallery(){
     const [indiceImg , setIndiceImg] = useState(0)
 
-    function prevImg(){
-        setIndiceImg(indiceImg - 1)
-    }
-    function nextImg(){
-        setIndiceImg(indiceImg + 1)
-    }
-
     const imgs = ['/team1.pmg.png','/team3.png','gatito.jpg','aaaa.jpg']
+
+
+    const isFirst = indiceImg === 0;
+    const isLast = indiceImg === imgs.length - 1; 
+
+    if (imgs.length === 0) return <p>No hay imágenes disponibles</p>
 
     return (
         <>
@@ -20,11 +20,11 @@ export default function Gallery(){
             <div style={{display:'flex',justifyContent:'center',gap:'25px'}}>
                 <Button
                  color='red' 
-                onClick={prevImg} 
-               disabled={indiceImg === 0}
+                onClick={() => setIndiceImg((i) => i - 1)} 
+               disabled={isFirst }
                 >Anterior</Button>
-                <Button color='green' onClick={nextImg} 
-                 disabled={indiceImg === imgs.length -1}
+                <Button color='green' onClick={() => setIndiceImg((i) => i + 1)} 
+                 disabled={isLast}
                 >Siguiente</Button>
             </div>
         </div>
