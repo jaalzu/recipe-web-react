@@ -99,7 +99,7 @@ export default function App() {
     ),
      passwordGenerator: (
       <Card titulo="📊 Ejercicio 10: Generador de contraseñas"
-            tarea=" Genera contraseñas con opciones personalizables"
+            tarea=" Genera contraseñas aleatorias "
             pista="💡 Pista:  Usa Math.random(), charAt() y concatena strings según las opciones seleccionadas"
             color='#ef454d'>
         <PasswordGenerator />

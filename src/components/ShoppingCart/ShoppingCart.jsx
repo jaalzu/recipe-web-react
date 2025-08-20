@@ -2,6 +2,8 @@ import CardShopping from "./CardShopping"
 import { useState } from 'react';
 import styles from './ShoppingCart.module.css'
 import {products} from "../../data/products"
+import Button from "../Button/Button";
+
 
 export default function ShoppingCart(){
     const [cart,setCart] = useState([]);
@@ -10,6 +12,11 @@ export default function ShoppingCart(){
         const product = products.find(p => p.id === id);
         setCart([...cart,product])
     }
+
+    const emptyCart = () => {
+        setCart([])
+    }
+
     return(
         <>
         <h3>Productos</h3>
@@ -36,6 +43,7 @@ export default function ShoppingCart(){
         <hr />
         <div className={styles.cartTotal}><span>Total:</span> ${cart.reduce((sum,item) => sum + item.price,0)} </div>
         </div>
+            <Button style={{marginTop:'25px'}} color='red' onClick={emptyCart}>Empty Cart</Button>
         </>
     )
 }
