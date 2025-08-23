@@ -17,6 +17,10 @@ export default function TodoList(){
         setTareas([])
     }
 
+    function DeleteTask(indexToDelete){
+        setTareas(tareas.filter((_,index) => index !== indexToDelete))
+    }
+
     return (
         <div>
             <div style={{display:'flex',gap:'10px'}}>
@@ -27,8 +31,15 @@ export default function TodoList(){
             <Button color="green" onClick={AddTask}>Agregar</Button>
             </div>
             <div className={styles.tasks}>
-                {tareas.map((tarea,index) => <ul>
-                <li key={index} className={styles.task}>{tarea}</li>
+                {tareas.map((tarea,index) => <ul className={styles.taskList}>
+                <li key={index} className={styles.task} >
+                    <span className={styles.deleteButton}
+                    onClick={() => DeleteTask(index)}
+                    >
+                        x
+                    </span>
+                    {tarea}
+                    </li>
                  </ul>)}
                 </div>
 

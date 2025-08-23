@@ -1,4 +1,4 @@
-ul{
+.taskList{
     padding: 0;
     list-style: none;
 }
@@ -7,5 +7,17 @@ ul{
     padding: .5rem;
     border-radius: 10px;
     background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
 }
 
+
+.deleteButton{
+    color: red;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: .5rem;
+    font-weight: bold;
+
+}
