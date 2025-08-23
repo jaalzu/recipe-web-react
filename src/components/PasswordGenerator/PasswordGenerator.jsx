@@ -23,10 +23,9 @@ export default function PasswordGenerator(){
   const copyPassword = () => {
     navigator.clipboard.writeText(password);
     
-    // Crear elemento temporal para mostrar mensaje
     const button = document.querySelector('[data-copy-btn]');
     const originalText = button.textContent;
-    button.textContent = '✅ ¡Copiado!';
+    button.textContent = ' ¡Copiado!';
     button.style.background = '#22c55e';
     
     setTimeout(() => {

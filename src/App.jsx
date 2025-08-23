@@ -13,6 +13,7 @@ import Quiz from './components/Quiz/Quiz'
 import ShoppingCart from './components/ShoppingCart/ShoppingCart'
 import PasswordGenerator from './components/PasswordGenerator/PasswordGenerator'
 
+
 export default function App() {
   const [active, setActive] = useState("counter");
 
@@ -118,7 +119,7 @@ export default function App() {
     { id: 'gallery', label: 'Gallery' },
     { id: 'quiz', label: 'Quiz' },
     { id: 'shoppingCart', label: 'ShoppingCart' },
-    { id: 'passwordGenerator', label: 'PasswordGenerator' }
+    { id: 'passwordGenerator', label: 'PasswordGenerator' },
   ];
 
   return (
