@@ -15,13 +15,14 @@ export default function CalculatorTips(){
             </div>
           </div>
           <div className={styles.percentButtons}>
-             <Button color='red'>a</Button>
-             <Button color='red'>a</Button>
-            <Button color='red'>a</Button>
+             <Button color='red'>10%</Button>
+             <Button color='red'>15%</Button>
+            <Button color='red'>20%</Button>
           </div>
         <div className={styles.results}>
             <p>Propina: <span>$0</span></p>
             <p>Total: <span>$0</span></p>
+            <hr />
             <p>Por persona: <span>$0</span></p>
         </div>
         </div>
