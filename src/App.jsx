@@ -14,7 +14,7 @@ import ShoppingCart from './components/ShoppingCart/ShoppingCart'
 import PasswordGenerator from './components/PasswordGenerator/PasswordGenerator'
 import TemperatureConversor from './components/TemperatureConversor/TemperatureConversor'
 import CalculatorTips from './components/CalculatorTips/CalculatorTips'
-
+import Timer from './components/Timer/Timer';
 
 export default function App() {
   const [active, setActive] = useState("counter");
@@ -109,7 +109,7 @@ export default function App() {
       </Card>
     ),
      temperatureConversor: (
-      <Card titulo="📊 Ejercicio 10: Conversor de Temperatura"
+      <Card titulo="📊 Ejercicio 11: Conversor de Temperatura"
             tarea=" Convierte entre Celsius , Fahrenheit y Kelvin "
             pista="💡 Pista:  F = C x 9/5 + 32 | K = C + 273.15"
             color='#00e2e6ff'>
@@ -117,11 +117,19 @@ export default function App() {
       </Card>
     ),
     calculatorTips: (
-      <Card titulo="📊 Ejercicio 10: Calculadora de Propinas"
+      <Card titulo="📊 Ejercicio 12: Calculadora de Propinas"
             tarea=" Calcular propinas y dividir entre personas "
             pista="💡 Pista:  propina = monto x (porcentaje / 100)"
             color='#fa04edff'>
         <CalculatorTips />
+      </Card>
+    ),
+    timer: (
+      <Card titulo="📊 Ejercicio 13: Reloj digital"
+            tarea=" Mostrar hora actual que se actualice automáticamente "
+            pista="💡 Pista:  use new Date() y setInterval() con useEffect"
+            color='#bdc703ff'>
+        <Timer />
       </Card>
     )
   }
@@ -139,7 +147,8 @@ export default function App() {
     { id: 'shoppingCart', label: 'Shopping Cart' },
     { id: 'passwordGenerator', label: 'Password Generator' },
     { id: 'temperatureConversor', label: 'Temperature Conversor' },
-    { id: 'calculatorTips', label: 'Calculator Tips' }
+    { id: 'calculatorTips', label: 'Calculator Tips' },
+    { id: 'timer', label: 'Timer' }
   ];
 
   return (
