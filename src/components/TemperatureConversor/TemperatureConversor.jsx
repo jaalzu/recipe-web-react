@@ -28,15 +28,15 @@ export default function TemperatureConversor() {
   }
 
   function handleChange(value, scale) {
-   if (value === "") {
-    setTemps({ C: "", F: "", K: "" })
-    return
-  }
+        if (value === "") {
+            setTemps({ C: "", F: "", K: "" })
+            return
+        }
 
-    const val = parseFloat(value)
-  if (!isNaN(val)) {
-    setTemps(converters[scale](val))
-  }
+        const val = parseFloat(value)
+            if (!isNaN(val)) {
+                setTemps(converters[scale](val))
+            }
   }
 
   return (
