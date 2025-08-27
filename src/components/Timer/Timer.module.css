@@ -1,3 +1,16 @@
-.timerShow{
-    background-color: rebeccapurple;
+.timerContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timeShow{
+    background-color: black;
+    color: violet;
+    width: 100%;
+    display: flex;
+    padding-block: .7rem;
+    font-size: 1.2rem;
+    justify-content: center;
 }
