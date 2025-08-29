@@ -1,12 +1,26 @@
 import  styles  from './Timer.module.css'
+import { useState, useEffect } from "react";
+
 
 export default function Timer(){
-    return (
-        <>
-            <div className={styles.timerContainer}>
-                <div className={styles.timeShow}>00:00:00</div>
-                <p className={styles.dateShow}>01/01/2024</p>
-            </div>
-        </>
-    )
-}
+    const [fecha,setFecha] = useState(new Date());
+
+  useEffect(() => {
+    const intervalo = setInterval(() => {
+      setFecha(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalo); 
+  }, []);
+
+
+
+        return (
+            <>
+                    <div className={styles.timerContainer}>
+                    <div className={styles.timeShow}>Time: {fecha.toLocaleTimeString()}</div>
+                    <div className={styles.timeShow}>Date: {fecha.toLocaleDateString()}</div>
+                </div>
+            </>
+        )
+    }
