@@ -15,6 +15,10 @@ import PasswordGenerator from './components/PasswordGenerator/PasswordGenerator'
 import TemperatureConversor from './components/TemperatureConversor/TemperatureConversor'
 import CalculatorTips from './components/CalculatorTips/CalculatorTips'
 import Timer from './components/Timer/Timer';
+import LikeButton from './components/LikeButton/LikeButton';
+import PasswordToggle from './components/PasswordToggle/PasswordToggle';
+import StarRating from './components/StarRating/StarRating';
+import Cronometro from './components/Cronometro/Cronometro';
 
 export default function App() {
   const [active, setActive] = useState("counter");
@@ -131,7 +135,33 @@ export default function App() {
             color='#bdc703ff'>
         <Timer />
       </Card>
+    ),
+    likeButton: (
+      <Card titulo="📊 Ejercicio 14: Like Button"
+            tarea=" Hover y cambio de texto en el like button! "
+            color='#7a008aff'>
+          <LikeButton></LikeButton>
+      </Card>
+    ),
+    starRating: (
+      <Card titulo="📊 Ejercicio 15: Star Rating"
+            tarea=" Hover en las estrellas "
+            color='#06b0f4ff'>
+      </Card>
+    ),
+    passwordToggle: (
+      <Card titulo="📊 Ejercicio 16: Password Toggle"
+            tarea=" Show & Hide Password "
+            color='#00ff80ff'>
+      </Card>
+    ),
+    cronometro: (
+      <Card titulo="📊 Ejercicio 17: cronometro"
+            tarea=" Cronometro funcional! "
+            color='#4000ffff'>
+      </Card>
     )
+
   }
 
   const items = [
@@ -148,7 +178,11 @@ export default function App() {
     { id: 'passwordGenerator', label: 'Password Generator' },
     { id: 'temperatureConversor', label: 'Temperature Conversor' },
     { id: 'calculatorTips', label: 'Calculator Tips' },
-    { id: 'timer', label: 'Timer' }
+    { id: 'timer', label: 'Timer' },
+    { id: 'likeButton', label: 'Like Button' },
+    { id: 'starRating', label: 'Star Rating' },
+    { id: 'passwordToggle', label: 'Password Toggle' },
+    { id: 'cronometro', label: 'Crónometro' }
   ];
 
   return (
