@@ -19,6 +19,7 @@ import LikeButton from './components/LikeButton/LikeButton';
 import PasswordToggle from './components/PasswordToggle/PasswordToggle';
 import StarRating from './components/StarRating/StarRating';
 import Cronometro from './components/Cronometro/Cronometro';
+import Spotlight from './components/Spotlight/Spotlight';
 
 export default function App() {
   const [active, setActive] = useState("counter");
@@ -163,6 +164,13 @@ export default function App() {
             color='#4000ffff'>
               <Cronometro/>
       </Card>
+    ),
+    spotlight: (
+      <Card titulo="📊 Ejercicio 18: Linterna"
+            tarea=" una linterna! "
+            color='#cb0c0cff'>
+              <Spotlight/>
+      </Card>
     )
 
   }
@@ -185,7 +193,8 @@ export default function App() {
     { id: 'likeButton', label: 'Like Button' },
     { id: 'starRating', label: 'Star Rating' },
     { id: 'passwordToggle', label: 'Password Toggle' },
-    { id: 'cronometro', label: 'Crónometro' }
+    { id: 'cronometro', label: 'Crónometro' },
+    { id: 'spotlight', label: 'Spotlight' }
   ];
 
   return (

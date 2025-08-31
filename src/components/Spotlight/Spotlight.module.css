@@ -1,0 +1,43 @@
+.spotlightCard {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spotlightCard.active {
+  transform: scale(1.02);
+}
+
+.spotlightCard.inactive {
+  transform: scale(1);
+}
+
+.content {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  margin: 0;
+  opacity: 0.9;
+  color: white;
+  font-size: 16px;
+}
