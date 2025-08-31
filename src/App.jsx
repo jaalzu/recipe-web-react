@@ -140,25 +140,28 @@ export default function App() {
       <Card titulo="📊 Ejercicio 14: Like Button"
             tarea=" Hover y cambio de texto en el like button! "
             color='#7a008aff'>
-          <LikeButton></LikeButton>
+          <LikeButton />
       </Card>
     ),
     starRating: (
       <Card titulo="📊 Ejercicio 15: Star Rating"
             tarea=" Hover en las estrellas "
             color='#06b0f4ff'>
+              <StarRating/>
       </Card>
     ),
     passwordToggle: (
       <Card titulo="📊 Ejercicio 16: Password Toggle"
             tarea=" Show & Hide Password "
             color='#00ff80ff'>
+              <PasswordToggle/>
       </Card>
     ),
     cronometro: (
       <Card titulo="📊 Ejercicio 17: cronometro"
             tarea=" Cronometro funcional! "
             color='#4000ffff'>
+              <Cronometro/>
       </Card>
     )
 

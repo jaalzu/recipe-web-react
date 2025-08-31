@@ -1,5 +1,10 @@
+import { useState } from 'react'
+import styles from './LikeButton.module.css'
+
 export default function LikeButton(){
+    const [like,setLike] = useState(false)
+    
     return(
-        <h1>Hola</h1>
+        <div className={styles.likeButton}>♥ 0 Likes</div>
     )
 }
