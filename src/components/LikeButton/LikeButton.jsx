@@ -16,7 +16,7 @@ export default function LikeButton(){
             onClick={handleClickLike}
             className={isLiked ? styles.liked : styles.notLiked}
             >
-            {isLiked ? "♥ 1 Likes" : '♥ 0 Likes'}
+            {isLiked ? "❤️ 1 Likes" : '🤍 0 Likes'}
             </Button>
             </div>
     )
