@@ -17,7 +17,7 @@ export default function StarRating(){
                 onMouseEnter={() => setHover(star)}
                 onMouseLeave={() => setHover(0)}
                 style={{
-              color: star <= (hover || rating) ? '#ffd700' : '#ddd'
+                color: star <= (hover || rating) ? '#ffd700' : '#ddd'
             }}
                 >
                  {star <= (hover || rating) ? "★" : "☆"}
