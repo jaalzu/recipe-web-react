@@ -175,7 +175,7 @@ export default function App() {
     ),
     randomcolor: (
       <Card titulo="📊 Ejercicio 19: Random color picker"
-            tarea=" una linterna! "
+            tarea=" Haz click para un color diferente en hexadecimal!"
             color='#cb0c0cff'>
               <RandomColor/>
       </Card>
