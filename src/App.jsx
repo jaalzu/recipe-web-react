@@ -20,6 +20,7 @@ import PasswordToggle from './components/PasswordToggle/PasswordToggle';
 import StarRating from './components/StarRating/StarRating';
 import Cronometro from './components/Cronometro/Cronometro';
 import Spotlight from './components/Spotlight/Spotlight';
+import RandomColor from './components/RandomColor/RandomColor';
 
 export default function App() {
   const [active, setActive] = useState("counter");
@@ -171,6 +172,13 @@ export default function App() {
             color='#cb0c0cff'>
               <Spotlight/>
       </Card>
+    ),
+    randomcolor: (
+      <Card titulo="📊 Ejercicio 19: Random color picker"
+            tarea=" una linterna! "
+            color='#cb0c0cff'>
+              <RandomColor/>
+      </Card>
     )
 
   }
@@ -194,7 +202,8 @@ export default function App() {
     { id: 'starRating', label: 'Star Rating' },
     { id: 'passwordToggle', label: 'Password Toggle' },
     { id: 'cronometro', label: 'Crónometro' },
-    { id: 'spotlight', label: 'Spotlight' }
+    { id: 'spotlight', label: 'Spotlight' },
+    { id: 'randomcolor', label: 'Random color' }
   ];
 
   return (
